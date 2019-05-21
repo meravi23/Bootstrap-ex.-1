@@ -4,16 +4,19 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
 }
 
-.jumbotron h1,
-.jumbotron p, .jumbotron h5 {
+h5, .jumbotron h1, .jumbotron p, .jumbotron h5, .carousel {
     text-align: center;
 }
 
-h1,
-.navbar-brand {
+h1, .navbar-brand {
     font-family: 'Pacifico', cursive;
+}
+
+h5 {
+    font-size: 2rem;
 }
 
 .card {
@@ -25,4 +28,21 @@ h1,
     width: 150px;
     margin: auto;
     display: block;
+}
+
+.carousel {
+    margin-top: 5px;
+}
+
+/* Make the image fully responsive */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item a {
+        display: inline;
+    }
 }
